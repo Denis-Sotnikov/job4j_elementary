@@ -4,7 +4,6 @@ import javax.imageio.stream.ImageInputStream;
 
 public class MultipleSwitchWeek {
     public static int numberOfDay(String name) {
-
      return switch (name) {
             case "Понедельник" -> 1;
             case "Вторник", "Tuesday" -> 2;
