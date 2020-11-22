@@ -7,7 +7,7 @@ public class Converter {
     }
 
     public static int rubleToDollar(int value) {
-        int rsl = value/60; /* формула перевода рублей в доллары. */
+        int rsl = value / 60; /* формула перевода рублей в доллары. */
         return rsl;
     }
 
@@ -17,5 +17,18 @@ public class Converter {
 
         int dollar = Converter.rubleToDollar(180);
         System.out.println("180 rubles are " + dollar + " dollars.");
+
+        int in = 140;
+        int expected = 2;
+        int out = Converter.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2. Test result : " + passed);
+
+        int inSecond = 120;
+        int expectedSecond = 2;
+        int outSecond = Converter.rubleToDollar(inSecond);
+        boolean passedSecond = expectedSecond == outSecond;
+        System.out.println("120 rubles are 2 dollars. Test result : " + passedSecond);
+
     }
 }
