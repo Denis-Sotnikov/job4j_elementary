@@ -42,7 +42,7 @@ public class X2Test {
     }
 
     @Test
-    public void whenA0B1C1X1Then3() {
+    public void whenA0B1C1X1Then2() {
         /* Входные параметры. Их будет 4 штуки */
         int a = 0;
         int b = 1;
@@ -59,7 +59,7 @@ public class X2Test {
     }
 
     @Test
-    public void whenA1B1C0X1Then3() {
+    public void whenA1B1C0X1Then2() {
         /* Входные параметры. Их будет 4 штуки */
         int a = 1;
         int b = 1;
@@ -76,7 +76,7 @@ public class X2Test {
     }
 
     @Test
-    public void whenA1B1C1X0Then3() {
+    public void whenA1B1C1X0Then1() {
         /* Входные параметры. Их будет 4 штуки */
         int a = 1;
         int b = 1;
