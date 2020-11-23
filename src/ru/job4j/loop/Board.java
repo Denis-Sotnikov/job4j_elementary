@@ -2,23 +2,27 @@ package ru.job4j.loop;
 
 public class Board {
     public static void paint(int width, int height){
-        for(int i = 1; i <= height; i++){
-            for(int j = 1; j <= width; j++){
-                if (i % 2 != 0){
-                    if (j % 2 != 0)
-                        System.out.print("X");
-                    else
-                        System.out.print(" ");
-                }
-                else{
-                        if (j % 2 == 0)
-                            System.out.print("X");
+        for(int i = 1; i <= height; i++)
+            {
+                for(int j = 1; j <= width; j++)
+                    {
+                        if(i % 2 != 0)
+                            {
+                                if (j % 2 != 0)
+                                    System.out.print("X");
+                                else
+                                    System.out.print(" ");
+                            }
                         else
-                            System.out.print(" ");
+                            {
+                                if (j % 2 == 0)
+                                    System.out.print("X");
+                                else
+                                    System.out.print(" ");
+                            }
                     }
+                System.out.println();
             }
-            System.out.println();
-        }
     }
 
     public static void main(String[] args) {
