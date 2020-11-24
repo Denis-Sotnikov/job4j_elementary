@@ -8,9 +8,7 @@ public class SortSelected {
             int index = FindLoop.indexOf(data, min, i, data.length - 1);
             /* swap(...) */
             if (data[index] != data[i]) {
-                int tmp = data[i];
-                data[i] = data[index];
-                data[index] = tmp;
+                SwitchArray.swap(data, i, index);
             }
         }
         return data;
