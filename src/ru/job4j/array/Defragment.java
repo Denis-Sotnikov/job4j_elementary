@@ -7,7 +7,6 @@ public class Defragment {
         array[dest] = temp;
         return array;
     }
-
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
@@ -17,13 +16,10 @@ public class Defragment {
                         break;
                     }
                 }
-                //int point = index; /* указатель на null ячейку. */
-                /* переместить первую не null ячейку. Нужен цикл. */
             }
         }
         return array;
     }
-
     public static void main(String[] args) {
         String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
         String[] compressed = compress(input);

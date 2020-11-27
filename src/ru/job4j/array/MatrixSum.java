@@ -8,7 +8,6 @@ public class MatrixSum {
                 rsl = rsl + array[i][j];
             }
         }
-        /* loops */
         return rsl;
     }
 }

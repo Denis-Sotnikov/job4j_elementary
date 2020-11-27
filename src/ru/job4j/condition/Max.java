@@ -6,7 +6,6 @@ public class Max {
         int result = flag ? left : right;
         return result;
     }
-
     public static void main(String[] args) {
         System.out.println(max(15, 15));
     }

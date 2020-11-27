@@ -1,7 +1,6 @@
 package ru.job4j.array;
 
 public class ArrayChar {
-
     public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
         int size = word.length <= pref.length ? word.length : pref.length;
