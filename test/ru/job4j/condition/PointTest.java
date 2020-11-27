@@ -10,11 +10,9 @@ public class PointTest {
     @Test
     public void when00to20then2() {
         int expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -25,7 +23,9 @@ public class PointTest {
         int y1 = 0;
         int x2 = 0;
         int y2 = 2;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(2, 0);
+        Point b = new Point(0, 2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -36,7 +36,9 @@ public class PointTest {
         int y1 = 15;
         int x2 = 0;
         int y2 = 20;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(2, 15);
+        Point b = new Point(0, 20);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
